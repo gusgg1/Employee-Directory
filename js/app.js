@@ -54,7 +54,6 @@
     url: 'https://randomuser.me/api/?results=12&nat=us,gb,ca',
     dataType: 'json',
     success: function(data) {    
-      
       $.each(data.results, function(i, employee) {
         let fName = employee.name.first;
         let lName = employee.name.last;
@@ -94,7 +93,6 @@
     } else {
       return;  
     }
-
     $overlay.show();
   });
 
@@ -125,9 +123,13 @@
     const searchTerm = form.firstElementChild.value.toLowerCase();
     const employees = document.querySelectorAll('.box');
     for (let i = 0; i < employees.length; i++) {
-      if (!employees[i].textContent.includes(searchTerm)) {
+      let searchParameter = '';
+      let employeeName = employees[i].lastElementChild.firstElementChild;
+      let username = employeeName.nextElementSibling.nextElementSibling.nextElementSibling;
+      searchParameter += employeeName.textContent.toLowerCase() + username.textContent;
+      if (!searchParameter.includes(searchTerm)) {
         employees[i].style.display = 'none';
-      }
+      } 
     }
   });
 

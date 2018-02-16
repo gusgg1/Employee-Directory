@@ -1,0 +1,185 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 40px;
+  font-family: 'Open Sans', sans-serif;
+  background:#f7f8f9;
+}
+
+.title {
+  color: #a0a0a0;
+  width: 100%;
+  padding-bottom: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgba(142, 131, 131, 0.388);
+}
+
+p,
+h4 {
+  margin: 10px 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) ) ;
+}
+
+.box {
+  border: 1px solid lightgrey;
+  background-color: white;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.box:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.details {
+  float: right;
+  font-size: 1.1rem;
+  width: 55%;
+  margin: 5px 10px;
+  overflow: auto;
+  color: #3A3A38;
+}
+
+.info {
+  font-size: 0.7em;
+  line-height: 1.5;
+  color: #8B8682;
+}
+
+.employee,
+#name {
+  color: #3A3A38;
+  font-weight: 700;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.picture {
+  border-radius: 50%;
+  width: 30%;
+  margin: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+/************ Search ***********/
+
+#search-bar {
+  float: right;
+}
+
+#search input[type="text"] {
+  background: no-repeat 10px 6px #fcfcfc;
+  border: 1px solid #d1d1d1;
+  color: #3A3A38;
+  width: 150px;
+  padding: 6px 15px 6px 35px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  -webkit-transition: all 0.7s ease 0s;
+  -moz-transition: all 0.7s ease 0s;
+  -o-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
+  }
+
+#search input[type="text"]:focus {
+  width: 200px;
+  outline:0;
+  }
+
+
+
+/************ OVERLAY ***********/
+
+#overlay {
+  background: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+  text-align: center;
+  position: fixed;
+}
+
+#overlay .card {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  margin: 10% auto 0;
+  border-radius: 5px;
+  padding: 10px;
+  overflow: auto;
+  text-align: center;
+  border: 1px solid lightgrey;
+}
+
+#overlay img {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+
+#overlay .close {
+  float: right;
+  color: #a0a0a0;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#overlay span:hover {
+  color: #8B8682;
+}
+
+.container {
+ color: #8B8682;
+ font-size: 0.9em;
+ line-height: 1;
+}
+
+#user-mail,
+#birthdate {
+  border-bottom: 2px solid rgba(142, 131, 131, 0.388);
+  padding-bottom: 10px; 
+}
+
+.slide {
+  font-size: 2em;
+  color: #8B8682;
+  cursor: pointer;
+  padding: 5px 20px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

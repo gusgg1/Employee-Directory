@@ -47,7 +47,7 @@ h4 {
   float: right;
   font-size: 1.1rem;
   width: 55%;
-  margin: 5px 10px;
+  margin: 5px 15px;
   overflow: auto;
   color: #3A3A38;
 }
@@ -67,7 +67,7 @@ h4 {
 
 .picture {
   border-radius: 50%;
-  width: 30%;
+  width: 25%;
   margin: 10px;
 }
 
@@ -125,7 +125,7 @@ h4 {
 #overlay .card {
   background-color: white;
   width: 300px;
-  height: 300px;
+  height: 320px;
   margin: 10% auto 0;
   border-radius: 5px;
   padding: 10px;
@@ -138,6 +138,7 @@ h4 {
   display: block;
   margin: auto;
   border-radius: 50%;
+  width: 25%;
 }
 
 #overlay .close {

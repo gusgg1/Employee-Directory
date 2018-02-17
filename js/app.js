@@ -61,7 +61,7 @@
         lName = capitalizeFirstLetter(lName);
         box += `
           <div class="box">
-            <img src="${employee.picture.thumbnail}" class="picture" alt="employee">
+            <img src="${employee.picture.large}" class="picture" alt="employee">
             <div class="details">
               <h4 class="employee">${fName} ${lName}</h4>
               <p class="info">${employee.email}</p>

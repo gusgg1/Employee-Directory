@@ -69,7 +69,7 @@
               <p class="info hidden">${employee.login.username}</p>
               <p class="info hidden">${employee.phone}</p>
               <p class="info hidden">${employee.location.street}, ${employee.location.city}, ${employee.location.state}, ${employee.location.postcode}</p>
-              <p class="info hidden">Birthday: ${employee.dob}</p>            
+              <p class="info hidden">Birthday: ${employee.dob.date.substring(0, 10)}</p>            
             </div>   
           </div>
         `;      

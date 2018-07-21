@@ -55,7 +55,6 @@
     dataType: 'json',
     success: function(data) {    
       $.each(data.results, function(i, employee) {
-        console.log(employee.dob.date);
         let fName = employee.name.first;
         let lName = employee.name.last;
         fName = capitalizeFirstLetter(fName);

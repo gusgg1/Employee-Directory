@@ -55,6 +55,7 @@
     dataType: 'json',
     success: function(data) {    
       $.each(data.results, function(i, employee) {
+        console.log(employee.dob.date);
         let fName = employee.name.first;
         let lName = employee.name.last;
         fName = capitalizeFirstLetter(fName);
@@ -69,7 +70,7 @@
               <p class="info hidden">${employee.login.username}</p>
               <p class="info hidden">${employee.phone}</p>
               <p class="info hidden">${employee.location.street}, ${employee.location.city}, ${employee.location.state}, ${employee.location.postcode}</p>
-              <p class="info hidden">Birthday: ${employee.dob}</p>            
+              <p class="info hidden">Birthday: ${employee.dob.date.substring(0, 10)}</p>            
             </div>   
           </div>
         `;      
